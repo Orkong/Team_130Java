@@ -1,6 +1,6 @@
 package day38_interfaces;
 
-public class C03_ChildOfInterface implements  I04_ChildInterface2{
+public class C04_ChildOfInterfaces implements  I03_ChildInterface1 {
     @Override
     public void method1() {
 
@@ -22,21 +22,21 @@ public class C03_ChildOfInterface implements  I04_ChildInterface2{
     }
 
     @Override
-    public String method5() {
+    public int method5() {
+        return 0;
+    }
+
+    @Override
+    public String method6() {
         return null;
     }
 
     @Override
-    public int method7() {
-        return 0;
+    public String method7() {
+        return null;
     }
 
-    @Override
-    public char method8() {
-        return 0;
-    }
-
-    //1,2,3,4,5,7,8
+    //1,2,3,4,5,6,7
 
 
 }

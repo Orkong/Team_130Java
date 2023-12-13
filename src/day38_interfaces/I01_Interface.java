@@ -14,7 +14,28 @@ public interface I01_Interface {
        KURAL 3 :  bir interface icinde olusturulan variable'lar icin
                   public,static veya final keyword'lerini yazmak redundant'dir
 
+       KURAL 4 : Bir class birden fazla class'i inherit EDEMEZ
+                 ama birden fazla interface'i IMPLEMENT edebilir
+                 Hatta bir classs bir class'a extend edip,bunun yaninda
+                 birden fazla interface'e de implement edebilir
 
+       KURAL 5 : class ==> class inhetir icin extends
+                 class ==> intefcafe inherit icin implements
+                 interface ==> interface inherit icin extends
+                 interface ==> class inherit icin OLMAZ
+
+       KURAL 6 : Bir class birden fazla interface'i inherit ettiginde
+                 parent interface'lerde ayni isimde variable varsa
+                 secim yapmamizi ister, interfaceIsmi.VariableIsmi seklinde kullandirir
+                 parent interface'lerde ayni isimlerde METHOD varsa
+                  * eger return type'lari ayni ise
+                    hangisinden aldigi onemli olmaz
+                    o method'u override eder
+                  * eger return type'lari FARKLI ise
+                    overridding method hangi return type'i secse
+                    diger interface itiraz eder
+                    bu durumda 2 interface'den birine implement edebilir
+                    otekini birakiriz
      */
 
     public abstract void method1();

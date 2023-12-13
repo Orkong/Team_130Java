@@ -6,4 +6,39 @@ public interface I02_ParentInterface {
     void method2();
     public abstract String method3();
 
+    public default void method20(){
+
+    }
+
+    public static void method21(){
+
+    }
+
+    /*
+        Java8 ile birlikte developer'lardan gelen talepler dogrultusunda
+        Java Interface'ler icin bir istisna olusturmus
+
+        Talep : Interface'e sonradan bir method eklememiz gerekirse
+                onceden bu interface inherit eden tum class'lar kizariyor
+                sonradan ekledigimiz bu method'u mecburi olmaktan kurtar
+
+
+        Interface'lere sonradan eklenen method'lari
+        IMPLEMENT etmenin mecbur olmamasi icin
+        bu method'larin body'si OLMALIDIR.
+        Interface'de body'si olan method olusturabilmemiz icin
+        Java bildigimiz 2 keyword'u ozel kullanim icin yetkilendirmis
+        bu iki kelime :
+            - default
+            - static
+
+        iki keyword'un kullanimdaki farki bu method'lara erisim yontemi ile ilgilidir
+
+        - static keyword ile olusuturulan method'a static yontemler
+          yani interfaceIsmi.staticMethodIsmi() ile ulasabiliriz
+        - default keyword ile olusturulan method'a ise
+          obje olusturup obje uzerinden ulasabiliriz
+     */
+
+
 }

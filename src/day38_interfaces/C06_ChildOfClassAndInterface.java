@@ -1,8 +1,8 @@
 package day38_interfaces;
 
-public class C02_ChildOfInterfaces implements  I02_ParentInterface{
+public class C06_ChildOfClassAndInterface extends  C01_FinalVariable implements I02_ParentInterface{
 
-    // m1,m2,m3
+
     @Override
     public void method1() {
 
@@ -16,7 +16,12 @@ public class C02_ChildOfInterfaces implements  I02_ParentInterface{
     @Override
     public String method3() {
         return null;
+
     }
 
+    public static void main(String[] args) {
 
+
+        System.out.println(SAYI);
+    }
 }

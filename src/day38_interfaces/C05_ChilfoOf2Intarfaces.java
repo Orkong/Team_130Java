@@ -1,6 +1,6 @@
 package day38_interfaces;
 
-public class C03_ChildOfInterface implements  I04_ChildInterface2{
+public class C05_ChilfoOf2Intarfaces implements I04_ChildInterface2,I05_ChildInterface3{
     @Override
     public void method1() {
 
@@ -32,11 +32,26 @@ public class C03_ChildOfInterface implements  I04_ChildInterface2{
     }
 
     @Override
+    public String method9() {
+        return null;
+    }
+
+    @Override
     public char method8() {
         return 0;
     }
 
-    //1,2,3,4,5,7,8
+    // 1,2,3 parent'dan
+    // 4,7,9 I05'den
+    // 4,5,7,8 I04'den
+
+    public static void main(String[] args) {
+
+        System.out.println(I04_ChildInterface2.SAYI);
+        System.out.println(I05_ChildInterface3.S);
+        System.out.println(ILK_HARF);
+
+    }
 
 
 }
